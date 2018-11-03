@@ -1,42 +1,22 @@
-boosting\_vs\_svm
+Boosting Insights
 ================
 
-R Markdown
-----------
+Introduction
+------------
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see
-<a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.
+The following will test boosting capabilities to predict incomes given
+some sociodemographic variables. We will then compare boosting to other
+Machine Learning methods and try to understand the differences.
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+Exploratory Data Analyis
+------------------------
 
-![
-a\_1 = \\sum\_1^n\\frac{i}{n}^2
-](https://latex.codecogs.com/png.latex?%0Aa_1%20%3D%20%5Csum_1%5En%5Cfrac%7Bi%7D%7Bn%7D%5E2%0A "
-a_1 = \sum_1^n\frac{i}{n}^2
-")
+First of all, let us deep-dive in the dataset.
 
-``` r
-summary(cars)
-```
+![](test_files/figure-markdown_github-ascii_identifiers/cars-1.png)
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
-
-Including Plots
+Boosting Review
 ---------------
 
-You can also embed plots, for example:
-
-![](test_files/figure-markdown_github-ascii_identifiers/pressure-1.png)
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+Boosting classifies values based on a weighted vote:
+![H(x) = sign(\\sum\_{t=1}^T\\alpha\_th\_t(x))](https://latex.codecogs.com/png.latex?H%28x%29%20%3D%20sign%28%5Csum_%7Bt%3D1%7D%5ET%5Calpha_th_t%28x%29%29 "H(x) = sign(\sum_{t=1}^T\alpha_th_t(x))")
