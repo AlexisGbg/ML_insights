@@ -31,10 +31,13 @@ colnames(data) <- c("age",
                     "hours_per_week", 
                     "native_contry", 
                     "income")
+```
+
+``` r
 plot(data$hours_per_week)
 ```
 
-![](test_files/figure-markdown_github-ascii_identifiers/cars-1.png)
+![](test_files/figure-markdown_github-ascii_identifiers/cars_2-1.png)
 
 Boosting Review
 ---------------
