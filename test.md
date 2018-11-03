@@ -31,7 +31,7 @@ colnames(data) <- c("age",
                     "hours_per_week", 
                     "native_contry", 
                     "income")
-hist(data$hours_per_week)
+plot(data$hours_per_week)
 ```
 
 ![](test_files/figure-markdown_github-ascii_identifiers/cars-1.png)
