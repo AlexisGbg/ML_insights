@@ -1,28 +1,53 @@
 ---
-title: "boosting_vs_svm"
-output: html_document
+title: "Boosting Insights"
+output: 
+  github_document:
+    pandoc_args: --webtex
+    html_preview: false
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+---
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Introduction
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The following will test boosting capabilities to predict incomes given some sociodemographic variables. We will then compare boosting to other Machine Learning methods and try to understand the differences. 
+
+
+## Exploratory Data Analyis
+
+First of all, let us deep-dive in the dataset. 
 
 ```{r cars}
-summary(cars)
+data <- read.csv("data/adult.data", header = F)
+colnames(data) <- c("age", 
+                    "workclass", 
+                    "fnlwgt", 
+                    "education", 
+                    "education_num", 
+                    "marital_status", 
+                    "occupation", 
+                    "relationship", 
+                    "race", 
+                    "sex", 
+                    "capital_gain", 
+                    "capital_loss", 
+                    "hours_per_week", 
+                    "native_contry", 
+                    "income")
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+
+```{r cars_2}
+plot(data$hours_per_week)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Boosting Review
+
+Boosting classifies values based on a weighted vote: $H(x)=sign(\sum_{t=1}^T\alpha_th_t(x))$
+  
+
+
+
