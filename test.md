@@ -13,6 +13,27 @@ Exploratory Data Analyis
 
 First of all, let us deep-dive in the dataset.
 
+``` r
+setwd("/Users/gbg/Documents/Projets/GitHub/boosting_vs_svm")
+data <- read.csv("data/adult.data", header = F)
+colnames(data) <- c("age", 
+                    "workclass", 
+                    "fnlwgt", 
+                    "education", 
+                    "education_num", 
+                    "marital_status", 
+                    "occupation", 
+                    "relationship", 
+                    "race", 
+                    "sex", 
+                    "capital_gain", 
+                    "capital_loss", 
+                    "hours_per_week", 
+                    "native_contry", 
+                    "income")
+hist(data$hours_per_week)
+```
+
 ![](test_files/figure-markdown_github-ascii_identifiers/cars-1.png)
 
 Boosting Review
