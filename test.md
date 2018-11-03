@@ -19,4 +19,4 @@ Boosting Review
 ---------------
 
 Boosting classifies values based on a weighted vote:
-![H(x) = sign(\\sum\_{t=1}^T\\alpha\_th\_t(x))](https://latex.codecogs.com/png.latex?H%28x%29%20%3D%20sign%28%5Csum_%7Bt%3D1%7D%5ET%5Calpha_th_t%28x%29%29 "H(x) = sign(\sum_{t=1}^T\alpha_th_t(x))")
+![H(x)=sign(\\sum\_{t=1}^T\\alpha\_th\_t(x))](https://latex.codecogs.com/png.latex?H%28x%29%3Dsign%28%5Csum_%7Bt%3D1%7D%5ET%5Calpha_th_t%28x%29%29 "H(x)=sign(\sum_{t=1}^T\alpha_th_t(x))")
