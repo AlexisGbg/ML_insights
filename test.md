@@ -4,13 +4,20 @@ boosting\_vs\_svm
 R Markdown
 ----------
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is an R Markdown document. Markdown is a simple formatting syntax
+for authoring HTML, PDF, and MS Word documents. For more details on
+using R Markdown see
+<a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When you click the **Knit** button a document will be generated that
+includes both content as well as the output of any embedded R code
+chunks within the document. You can embed an R code chunk like this:
 
-$$
+![
 a\_1 = \\sum\_1^n\\frac{i}{n}^2
-$$
+](https://latex.codecogs.com/png.latex?%0Aa_1%20%3D%20%5Csum_1%5En%5Cfrac%7Bi%7D%7Bn%7D%5E2%0A "
+a_1 = \sum_1^n\frac{i}{n}^2
+")
 
 ``` r
 summary(cars)
@@ -31,4 +38,5 @@ You can also embed plots, for example:
 
 ![](test_files/figure-markdown_github-ascii_identifiers/pressure-1.png)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Note that the `echo = FALSE` parameter was added to the code chunk to
+prevent printing of the R code that generated the plot.
