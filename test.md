@@ -1,6 +1,8 @@
 Boosting Insights
 ================
 
+------------------------------------------------------------------------
+
 Introduction
 ------------
 
@@ -14,7 +16,6 @@ Exploratory Data Analyis
 First of all, let us deep-dive in the dataset.
 
 ``` r
-setwd("/Users/gbg/Documents/Projets/GitHub/boosting_vs_svm")
 data <- read.csv("data/adult.data", header = F)
 colnames(data) <- c("age", 
                     "workclass", 
