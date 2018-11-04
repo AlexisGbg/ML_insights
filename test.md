@@ -31,8 +31,6 @@ People belonging to the “over 50k” income category work on average
 approximately 7 hours more than people belonging to the “under 50k”
 category.
 
-    ## No summary function supplied, defaulting to `mean_se()
-
 ![](test_files/figure-gfm/eda_2-1.png)<!-- -->
 
 ## Boosting
@@ -48,32 +46,7 @@ Boosting classifies values based on a weighted vote:
 
 ### Code In Action
 
-Let us now run a boosting algorithm on the
-data.
-
-``` r
-bst <- xgboost(data = train$data, label = train$label, max.depth = 2, eta = 1, nthread = 2, nrounds = 10, objective = "binary:logistic")
-```
-
-    ## [1]  train-error:0.238863 
-    ## [2]  train-error:0.240107 
-    ## [3]  train-error:0.240107 
-    ## [4]  train-error:0.232828 
-    ## [5]  train-error:0.233335 
-    ## [6]  train-error:0.232736 
-    ## [7]  train-error:0.232736 
-    ## [8]  train-error:0.233243 
-    ## [9]  train-error:0.232045 
-    ## [10] train-error:0.230939
-
-``` r
-pred <- predict(bst, test$data)
-prediction <- as.numeric(pred > 0.5)
-err <- mean(as.numeric(pred > 0.5) != test$label)
-print(paste("test-error=", err))
-```
-
-    ## [1] "test-error= 0.235120692832136"
+Let us now run a boosting algorithm on the data.
 
 The following shows how the training error decreases over the iteration,
 an compares it to the generalized error (dashed line)
