@@ -48,6 +48,16 @@ Boosting classifies values based on a weighted vote:
 
 Let us now run a boosting algorithm on the data.
 
+``` r
+bst <- xgboost(data = train$data, 
+               label = train$label, 
+               max.depth = 2, 
+               eta = 1, 
+               nthread = 2, 
+               nrounds = 10, 
+               objective = "binary:logistic")
+```
+
 The following shows how the training error decreases over the iteration,
 an compares it to the generalized error (dashed line)
 ![](test_files/figure-gfm/boosting_visualize-1.png)<!-- -->
