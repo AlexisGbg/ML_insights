@@ -6,17 +6,19 @@ A Game Theory Approach of Boosting
 ## Introduction
 
 Although based on a very simple idea, Boosting is remarkably powerful to
-solve supervised learning tasks, and is moreover easy to implement and
-tune as it only needs one single parameter. Belonging to the
-ensemble-learning paradigm, the underlying principle is as follows:
-multiple weak-classifiers are trained on distorted versions of the
-training set, and these weak-classifiers are then combined into a
-committee that uses voting to classify new features. Now, this core
-principle can lead to a multitude of different boosting algorithms, and
-this post aims to explain how game theory can lead to the specific
-alpha-Boost algorithm. We then propose an implementation of the
-alpha-Boost algorithm and compare its performance to the famous AdaBoost
-algorithm.
+solve supervised learning tasks like classification, and is moreover
+easy to implement and tune as it only requires one single parameter to
+be set before running. Belonging to the ensemble-learning paradigm, the
+underlying principle is as follows: multiple “weak-classifiers” are
+trained on distorted versions of the training set, and these
+weak-classifiers are then combined into a committee that uses voting to
+classify new features. “Weak” is here meant in the sense that the
+classifiers do not need to show great performances, they only need to do
+slightly better than random guessing. Now, this core principle can lead
+to a multitude of different boosting algorithms, and this post aims to
+explain how game theory can lead to the specific alpha-Boost algorithm.
+We then propose an implementation of the alpha-Boost algorithm and
+compare its performance to the famous AdaBoost algorithm.
 
 ## Boosting from a Game Theory Perspective
 
@@ -209,7 +211,9 @@ implementations and it can be shown that they are both able to make the
 training error as small as wanted under the weak-learnability
 assumption. However, AdaBoost is an improvement over alpha-Boost in the
 sense that it will theoretically reduce the training error much faster
-through its adaptive mechanism.
+through its adaptive mechanism. Moreover, AdaBoost only requires one
+single parameter to be set (the number of iterations) whereas
+alpha-Boost needs two parameters.
 
 ### Testing
 
