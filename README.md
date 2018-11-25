@@ -7,4 +7,4 @@ Machine Learning is huge and provides a plethora of powerful techniques to solve
 You will find in each folder a markdown file that Github will directly render in the browser (just click on it). The code that has been used to produce the posts will also be attached, at your disposal, and the data sources are always mentioned and public so that you can reproduce the experimentations. 
 
 ## Disclaimer
-This work isn't research work, but rather a combination of experimentations and scientific popularization. Therefore, we consider our aim fulfilled if we could transmit an intuition about the concepts, and for the purist seeking proofs, details and a perfect rigour, you are wellcome to refer to the links at the bottom of each article :) 
+This work isn't research work, but rather a combination of experimentations and scientific popularization. Therefore, we consider our aim fulfilled if we could transmit an intuition about the concepts, and for the purist seeking proofs, details and a perfect rigour, I'm affraid we cannot satisfy you, but we welcome you to refer to the links at the bottom of each article in the hope that you could still learn something here :) 
